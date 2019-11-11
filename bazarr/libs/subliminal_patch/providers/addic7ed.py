@@ -353,7 +353,7 @@ class Addic7edProvider(_Addic7edProvider):
             return
 
         # detect download limit exceeded
-        if r.headers['Content-Type'] == 'text/html':
-            raise DownloadLimitExceeded
+        # if r.headers['Content-Type'] == 'text/html':
+        #     raise DownloadLimitExceeded
 
         subtitle.content = fix_line_ending(r.content)
